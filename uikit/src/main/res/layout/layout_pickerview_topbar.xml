@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@color/transparent"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/cancelIV"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:paddingLeft="@dimen/spacing_l"
+        android:paddingRight="@dimen/spacing_m"
+        android:src="@drawable/ic_picker_cancel" />
+
+    <com.ssmalllucky.android.ui.view.STPrimaryTextView
+        android:id="@+id/tvTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:lineSpacingExtra="4dp"
+        android:maxLines="2" />
+
+    <ImageView
+        android:id="@+id/okIV"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:paddingLeft="@dimen/spacing_m"
+        android:paddingRight="@dimen/spacing_l"
+        android:src="@drawable/ic_picker_ok" />
+</LinearLayout>

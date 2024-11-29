@@ -1,0 +1,72 @@
+plugins {
+    id 'com.android.library'
+}
+
+//版本号（改动条件：完全重构 或 重要功能的改动）
+def versionValue = "2"
+
+//发布号（改动条件：功能的改动 或 错误的修复）
+def releaseValue = "0"
+
+//固定号（改动条件：此AAR的任意调整）
+def fixValue = releaseTime()
+
+android {
+    namespace 'com.ssmalllucky.android.ui'
+    compileSdk 34
+
+    defaultConfig {
+        minSdk 24
+        targetSdk 28
+
+        versionName "$versionValue.$releaseValue.$fixValue"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    viewBinding {
+        enabled = true
+    }
+
+    dataBinding {
+        enabled = true
+    }
+
+    lint {
+        baseline = file("lint-baseline.xml")
+    }
+
+    libraryVariants.configureEach { variant ->
+        variant.outputs.configureEach {outputs ->
+            outputFileName = "uikit_V${defaultConfig.versionName}.aar"
+        }
+    }
+}
+
+static def releaseTime() {
+    return new Date().format("yyMMddHHmm", TimeZone.getTimeZone("GMT+8"))
+}
+
+dependencies {
+    implementation fileTree(include: ['*.aar','*.jar'], dir: 'libs')
+    implementation 'androidx.appcompat:appcompat:1.4.1'
+    implementation 'com.google.android.material:material:1.5.0'
+    implementation 'androidx.recyclerview:recyclerview:1.2.1'
+    implementation 'com.github.li-xiaojun:EasyAdapter:1.2.8'
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
+    implementation 'com.davemorrissey.labs:subsampling-scale-image-view-androidx:3.10.0'
+    testImplementation 'junit:junit:4.12'
+    annotationProcessor "androidx.lifecycle:lifecycle-compiler:2.5.1"
+    implementation 'com.google.code.gson:gson:2.8.2'
+}

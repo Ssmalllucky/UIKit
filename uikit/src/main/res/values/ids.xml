@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="iconTextSpinnerItemRoot" type="id" />
+    <item name="iconTextSpinnerItemRequired" type="id" />
+    <item name="iconTextSpinnerItemIcon" type="id" />
+    <item name="iconTextSpinnerItemTitle" type="id" />
+    <item name="iconTextSpinnerItemSpinner" type="id" />
+    <item name="iconTextSpinnerItemArrow" type="id" />
+
+    <item name="iconTextRadioGroupItemRoot" type="id" />
+    <item name="iconTextRadioGroupItemRequired" type="id" />
+    <item name="iconTextRadioGroupItemIcon" type="id" />
+    <item name="iconTextRadioGroupItemTitle" type="id" />
+    <item name="iconTextRadioGroupItemSpinner" type="id" />
+    <item name="iconTextRadioGroupItemArrow" type="id" />
+    <item name="iconTextRadioGroupItemRadioGroup" type="id" />
+
+    <item name="tag_stpickeritem_selected" type="id" />
+</resources>

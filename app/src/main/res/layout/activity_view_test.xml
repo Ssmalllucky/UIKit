@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.ssmalllucky.android.ui.view.STPrimaryTextView
+        android:id="@+id/dynamicTVWithWidth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="这是可以宽度动态调整字体大小的View"
+        />
+
+    <com.ssmalllucky.android.ui.view.STSwitchView
+        android:id="@+id/switchView"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|center_horizontal"
+        android:layout_margin="@dimen/spacing_l"
+        app:primaryColor="@color/activeColor"
+        app:primaryColorDark="@color/activeColor" />
+
+    <com.ssmalllucky.android.ui.widget.STCardView
+        android:id="@+id/testCardView"
+        android:layout_width="104dp"
+        android:layout_height="wrap_content"
+        app:STCardView_color="@color/successColor"
+        app:STCardView_icon="@drawable/ic_gggxsq"
+        app:STCardView_title="测试卡片"
+        app:cardCornerRadius="@dimen/spacing_m"
+        app:cardElevation="0dp" />
+
+    <com.ssmalllucky.android.ui.view.STLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/spacing_m"
+        android:orientation="horizontal">
+
+        <com.ssmalllucky.android.ui.view.STAssistView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:STAssistView_text="检验项目" />
+
+        <com.ssmalllucky.android.ui.view.STActionView
+            android:id="@+id/submitTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/spacing_m"
+            android:layout_weight="2"
+            android:gravity="center"
+            app:STActionView_text="提交"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:textColor="@color/white" />
+    </com.ssmalllucky.android.ui.view.STLinearLayout>
+</LinearLayout>

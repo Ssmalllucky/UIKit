@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_dialog_guiding_background"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/layout_pickerview_topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_m" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_color" />
+
+    <LinearLayout
+        android:id="@+id/pickerContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <com.ssmalllucky.android.ui.view.wheel.STWheelView
+            android:id="@+id/csys1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:STWheelView_textSize="@dimen/text_size_primary" />
+
+        <com.ssmalllucky.android.ui.view.wheel.STWheelView
+            android:id="@+id/csys2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_xs"
+            android:layout_weight="1"
+            app:STWheelView_textSize="@dimen/text_size_primary" />
+
+        <com.ssmalllucky.android.ui.view.wheel.STWheelView
+            android:id="@+id/csys3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_xs"
+            android:layout_weight="1"
+            app:STWheelView_textSize="@dimen/text_size_primary" />
+    </LinearLayout>
+</LinearLayout>

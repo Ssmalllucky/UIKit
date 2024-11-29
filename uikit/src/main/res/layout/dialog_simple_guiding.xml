@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/spacing_l">
+
+    <com.ssmalllucky.android.ui.view.STPrimaryTextView
+        android:id="@+id/titleTV"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="@dimen/page_layout_margin"
+        android:layout_marginEnd="@dimen/page_layout_margin"
+        android:gravity="center"
+        android:text="标题"
+        android:textStyle="bold"
+        app:STPrimaryTextView_textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/descContainer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/page_layout_margin"
+        android:gravity="left"
+        app:layout_constraintBottom_toTopOf="@+id/okTV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titleTV" />
+
+    <com.ssmalllucky.android.ui.view.STPrimaryTextView
+        android:id="@+id/okTV"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/action_view_height"
+        android:layout_margin="@dimen/page_layout_margin"
+        android:background="@drawable/selector_dialog_ok"
+        android:elevation="2dp"
+        android:gravity="center"
+        android:text="确定"
+        android:textStyle="bold"
+        android:translationZ="2dp"
+        app:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

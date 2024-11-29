@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_popspinner_item_single"
+    android:gravity="center_vertical"
+    android:minHeight="@dimen/settings_popup_item_height"
+    android:paddingStart="@dimen/spacing_m"
+    android:paddingTop="@dimen/spacing_m"
+    android:paddingEnd="@dimen/spacing_m"
+    android:paddingBottom="@dimen/spacing_m">
+
+    <ImageView
+        android:id="@+id/searchImageView"
+        android:layout_width="26dp"
+        android:layout_height="26dp" />
+
+    <com.ssmalllucky.android.ui.view.STSecondaryTextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/spacing_m"
+        android:layout_weight="1"
+        android:lineSpacingExtra="2dp"
+        android:paddingStart="@dimen/spacing_s"
+        app:textSize="@dimen/text_size_primary" />
+</LinearLayout>

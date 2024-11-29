@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="STItem">
+        <attr name="STItem_layoutPosition" format="enum">
+            <enum name="top" value="1" />
+            <enum name="middle" value="2" />
+            <enum name="bottom" value="3" />
+        </attr>
+        <attr name="STItem_hasNext" format="boolean" />
+        <attr name="STItem_icon" format="dimension" />
+        <attr name="STItem_isLayout" format="boolean" />
+        <attr name="STItem_titleSize" format="dimension" />
+        <attr name="STItem_title" format="string" />
+        <attr name="STItem_desc" format="string" />
+        <attr name="enabledTouch" format="boolean" />
+        <attr name="STItem_titleWrap" format="boolean" />
+        <attr name="activityTarget" format="string" />
+        <attr name="defaultMarginTop" format="dimension" />
+        <attr name="STItem_rectAroundCorners" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="STSwitchItem">
+        <attr name="isenable" format="boolean" />
+        <attr name="STSwitchItem_status" format="enum">
+            <enum name="off" value="1" />
+            <enum name="on" value="2" />
+        </attr>
+        <attr name="STSwitchItem_entries" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="STContentItem">
+        <attr name="STContentItem_maxLines" format="integer" />
+        <attr name="STContentItem_contentText" format="string" />
+        <attr name="STContentItem_contentColor" format="color" />
+        <attr name="STContentItem_hint" format="string" />
+        <attr name="STContentItem_contentBackground" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="STContentItem2">
+        <attr name="STContentItem2_maxLines" format="integer" />
+        <attr name="STContentItem2_contentText" format="string" />
+        <attr name="STContentItem2_contentColor" format="color" />
+        <attr name="STContentItem2_hint" format="string" />
+        <attr name="STContentItem2_contentBackground" format="integer" />
+        <attr name="STContentItem2_contentSize" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="STEditTextItem">
+        <attr name="STEditTextItem_hint" format="string" />
+        <attr name="STEditTextItem_content" format="string" />
+        <attr name="STEditTextItem_unit" format="string" />
+        <attr name="inputType">
+            <flag name="none" value="0x00000000" />
+            <flag name="text" value="0x00000001" />
+            <flag name="textCapCharacters" value="0x00001001" />
+            <flag name="number" value="0x00000002" />
+            <flag name="textPassword" value="0x00000081" />
+            <flag name="numberPassword" value="0x00000012" />
+        </attr>
+        <attr name="digits" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="STSpinnerItem">
+        <attr name="STSpinnerItem_entries" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="STSlidingTab">
+        <attr name="ststIndicatorColor" format="color" />
+        <attr name="ststUnderlineColor" format="color" />
+        <attr name="ststDividerColor" format="color" />
+        <attr name="ststIndicatorHeight" format="dimension" />
+        <attr name="ststUnderlineHeight" format="dimension" />
+        <attr name="ststDividerPadding" format="dimension" />
+        <attr name="ststTabPaddingLeftRight" format="dimension" />
+        <attr name="ststScrollOffset" format="dimension" />
+        <attr name="ststTabBackground" format="reference" />
+        <attr name="ststShouldExpand" format="boolean" />
+        <attr name="ststTextAllCaps" format="boolean" />
+    </declare-styleable>
+
+    <!-- For new UI -->
+    <declare-styleable name="STAssistView">
+        <attr name="STAssistView_showShader" format="boolean" />
+        <attr name="STAssistView_text" format="string" />
+        <attr name="STAssistView_background" format="reference" />
+        <attr name="STAssistView_textColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="STEditTextItem2">
+        <attr name="STEditTextItem2_hint" format="string" />
+        <attr name="STEditTextItem2_content" format="string" />
+        <attr name="STEditTextItem2_unit" format="string" />
+        <attr name="STEditTextItem2_inputType">
+            <flag name="none" value="0x00000000" />
+            <flag name="text" value="0x00000001" />
+            <flag name="textCapCharacters" value="0x00001001" />
+            <flag name="number" value="0x00000002" />
+            <flag name="textPassword" value="0x00000081" />
+            <flag name="numberPassword" value="0x00000012" />
+        </attr>
+        <attr name="STEditTextItem2_digits" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="STCardView">
+        <attr name="STCardView_icon" format="reference" />
+        <attr name="STCardView_color" format="color" />
+        <attr name="STCardView_title" format="string" />
+        <attr name="STCardView_titleSize" format="dimension" />
+        <attr name="STCardView_iconSize" format="dimension" />
+        <attr name="STCardView_titleColor" format="reference"/>
+        <attr name="STCardView_desc" format="string"/>
+        <attr name="STCardView_simpleBackground" format="boolean"/>
+        <attr name="STCardView_enableStateList" format="boolean" />
+    </declare-styleable>
+
+    <!-- For new UI. -->
+    <declare-styleable name="STItem2">
+        <attr name="STItem2_layoutPosition" format="enum">
+            <enum name="top" value="1" />
+            <enum name="middle" value="2" />
+            <enum name="bottom" value="3" />
+        </attr>
+        <attr name="STItem2_hasNext" format="boolean" />
+        <attr name="STItem2_icon" format="dimension" />
+        <attr name="STItem2_isLayout" format="boolean" />
+        <attr name="STItem2_title" format="string" />
+        <attr name="STItem2_titleSize" format="dimension" />
+        <attr name="STItem2_desc" format="string" />
+        <attr name="STItem2_titleWrap" format="boolean" />
+        <attr name="STItem2_enabledTouch" format="boolean" />
+        <attr name="STItem2_activityTarget" format="string" />
+        <attr name="STItem2_defaultMarginTop" format="dimension" />
+        <attr name="STItem2_rectAroundCorners" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="STSwitchItem2">
+        <attr format="boolean" name="STSwitchItem2_isenable"/>
+        <attr format="enum" name="STSwitchItem2_status">
+            <enum name="off" value="1"/>
+            <enum name="on" value="2"/>
+        </attr>
+        <attr format="dimension" name="STSwitchItem2_entries"/>
+        <attr format="color" name="STSwitchItem2_primaryColor"/>
+        <attr format="color" name="STSwitchItem2_primaryColorDark"/>
+    </declare-styleable>
+
+    <declare-styleable name="STPickerItem">
+        <attr name="STPickerItem_type" format="enum">
+            <enum name="date" value="1" />
+            <enum name="csys" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="STDrawableTextItem">
+        <attr name="STDrawableTextItem_color" format="color" />
+        <attr name="STDrawableTextItem_iconRes" format="reference" />
+        <attr name="STDrawableTextItem_iconSize" format="dimension" />
+        <attr name="STDrawableTextItem_iconPosition" format="enum">
+            <enum name="top" value="1" />
+            <enum name="end" value="2" />
+            <enum name="bottom" value="3" />
+            <enum name="start" value="4" />
+        </attr>
+        <attr name="STDrawableTextItem_textSize" format="dimension" />
+        <attr name="STDrawableTextItem_text" format="string" />
+    </declare-styleable>
+</resources>

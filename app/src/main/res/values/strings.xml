@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">UIKit</string>
+    <string-array name="settings_judge_sort">
+        <item>01:按项目序号按项目序号按项目序号项目序号按项目序号</item>
+        <item>02:按判定规则按项目序号按项目序号项目序号按项目序号</item>
+    </string-array>
+</resources>

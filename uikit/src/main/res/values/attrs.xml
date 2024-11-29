@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="LoadingIndicatorView">
+        <attr name="minWidth" format="dimension" />
+        <attr name="maxWidth" format="dimension" />
+        <attr name="minHeight" format="dimension" />
+        <attr name="maxHeight" format="dimension" />
+        <attr name="indicatorName" format="string" />
+        <attr name="indicatorColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="pickerview">
+        <attr name="pickerview_gravity">
+            <enum name="center" value="17" />
+            <enum name="left" value="3" />
+            <enum name="right" value="5" />
+        </attr>
+        <attr name="pickerview_textSize" format="dimension" />
+        <attr name="pickerview_textColorOut" format="color" />
+        <attr name="pickerview_textColorCenter" format="color" />
+        <attr name="pickerview_dividerColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="SettingsTextItem">
+        <attr name="isTop" format="boolean" />
+        <attr name="isBottom" format="boolean" />
+        <attr name="isLayout" format="boolean" />
+        <attr name="hasNext" format="boolean" />
+        <attr name="text" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="TitleInputItem">
+        <attr name="TitleInputItem_isTop" format="boolean" />
+        <attr name="TitleInputItem_isBottom" format="boolean" />
+        <attr name="TitleInputItem_isLayout" format="boolean" />
+        <attr name="TitleInputItem_title" format="string" />
+        <attr name="TitleInputItem_inputText" format="string" />
+        <attr name="TitleInputItem_inputHint" format="string" />
+        <attr name="android:inputType" />
+    </declare-styleable>
+
+    <declare-styleable name="TitleTextItem">
+        <attr name="TitleTextItem_isTop" format="boolean" />
+        <attr name="TitleTextItem_isBottom" format="boolean" />
+        <attr name="TitleTextItem_isLayout" format="boolean" />
+        <attr name="TitleTextItem_title" format="string" />
+        <attr name="TitleTextItem_text" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="SettingsItem">
+        <attr name="SettingsItem_layoutPosition" format="enum">
+            <enum name="top" value="1" />
+            <enum name="middle" value="2" />
+            <enum name="bottom" value="3" />
+        </attr>
+        <attr name="SettingsItem_hasNext" format="boolean" />
+        <attr name="SettingsItem_icon" format="dimension" />
+        <attr name="SettingsItem_isLayout" format="boolean" />
+        <attr name="SettingsItem_title" format="string" />
+        <attr name="SettingsItem_titleWrap" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="SettingsIconTitleItem">
+        <attr name="SettingsIconTitleItem_layoutPosition" format="enum">
+            <enum name="top" value="1" />
+            <enum name="middle" value="2" />
+            <enum name="bottom" value="3" />
+        </attr>
+        <attr name="SettingsIconTitleItem_hasNext" format="boolean" />
+        <attr name="SettingsIconTitleItem_icon" format="dimension" />
+        <attr name="SettingsIconTitleItem_title" format="string" />
+    </declare-styleable>
+
+
+    <declare-styleable name="SettingsIconTextSwitchItem">
+        <attr name="SettingsIconTextSwitchItem_switch_on" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="SettingsIconTextStatusItem">
+        <attr name="SettingsIconTextStatusItem_maxLines" format="integer" />
+        <attr name="SettingsIconTextStatusItem_status_text" format="string" />
+        <attr name="SettingsIconTextStatusItem_status_text_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="TitleContentTextItem">
+        <attr name="TitleContentTextItem_isTop" format="boolean" />
+        <attr name="TitleContentTextItem_isBottom" format="boolean" />
+        <attr name="TitleContentTextItem_isLayout" format="boolean" />
+        <attr name="TitleContentTextItem_hasNext" format="boolean" />
+        <attr name="TitleContentTextItem_text" format="string" />
+        <attr name="TitleContentTextItem_contentText" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="STPrimaryTextView">
+        <attr name="STPrimaryTextView_textSize" format="dimension" />
+        <attr name="STPrimaryTextView_textColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="STSecondaryTextView">
+        <attr name="STSecondaryTextView_textSize" format="dimension" />
+        <attr name="STSecondaryTextView_textColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="STEditText">
+        <attr name="STEditText_textSize" format="dimension" />
+        <attr name="STEditText_textColor" format="color" />
+        <attr name="STEditText_background" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="STTertiaryTextView">
+        <attr name="STTertiaryTextView_textSize" format="dimension" />
+        <attr name="STTertiaryTextView_textColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="STCheckBox">
+        <attr name="STCheckBox_isRequired" format="boolean" />
+        <attr name="STCheckBox_textSize" format="dimension" />
+        <attr name="STCheckBox_othersColor" format="color" />
+        <attr name="STCheckBox_enabledColor" format="color" />
+        <attr name="STCheckBox_activeColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="STSwitchCompat">
+        <attr name="STSwitchCompat_isRequired" format="boolean" />
+        <attr name="STSwitchCompat_textSize" format="dimension" />
+        <attr name="STSwitchCompat_othersColor" format="color" />
+        <attr name="STSwitchCompat_trackActiveColor" format="color" />
+        <attr name="STSwitchCompat_enabledColor" format="color" />
+        <attr name="STSwitchCompat_activeColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="STRadioButton">
+        <attr name="STRadioButton_isRequired" format="boolean" />
+        <attr name="STRadioButton_textSize" format="dimension" />
+        <attr name="STRadioButton_othersColor" format="color" />
+        <attr name="STRadioButton_trackActiveColor" format="color" />
+        <attr name="STRadioButton_enabledColor" format="color" />
+        <attr name="STRadioButton_activeColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="SettingsIconEditTextItem">
+        <attr name="SettingsIconEditTextItem_isRequired" format="boolean" />
+        <attr name="SettingsIconEditTextItem_isTop" format="boolean" />
+        <attr name="SettingsIconEditTextItem_isBottom" format="boolean" />
+        <attr name="SettingsIconEditTextItem_isLayout" format="boolean" />
+        <attr name="SettingsIconEditTextItem_hasNext" format="boolean" />
+        <attr name="SettingsIconEditTextItem_clickable" format="boolean" />
+        <attr name="SettingsIconEditTextItem_icon" format="dimension" />
+        <attr name="SettingsIconEditTextItem_title" format="string" />
+        <attr name="SettingsIconEditTextItem_hint" format="string" />
+        <attr name="SettingsIconEditTextItem_content" format="string" />
+        <attr name="SettingsIconEditTextItem_actionIcon" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="UIIconTextContentItem">
+        <attr name="UIIconTextContentItem_isRequired" format="boolean" />
+        <attr name="UIIconTextContentItem_isTop" format="boolean" />
+        <attr name="UIIconTextContentItem_isBottom" format="boolean" />
+        <attr name="UIIconTextContentItem_isLayout" format="boolean" />
+        <attr name="UIIconTextContentItem_hasNext" format="boolean" />
+        <attr name="UIIconTextContentItem_hint" format="string" />
+        <attr name="UIIconTextContentItem_icon" format="dimension" />
+        <attr name="UIIconTextContentItem_title" format="string" />
+        <attr name="UIIconTextContentItem_titleWrap" format="boolean" />
+        <attr name="UIIconTextContentItem_background" format="color" />
+        <attr name="UIIconTextContentItem_titleSize" format="dimension" />
+        <attr name="UIIconTextContentItem_titleColor" format="color" />
+        <attr name="UIIconTextContentItem_content" format="string" />
+        <attr name="UIIconTextContentItem_contentSize" format="dimension" />
+        <attr name="UIIconTextContentItem_statusText" format="string" />
+        <attr name="UIIconTextContentItem_statusTextSize" format="dimension" />
+        <attr name="UIIconTextContentItem_statusTextColor" format="color" />
+        <attr name="UIIconTextContentItem_contentWrap" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="UIIconTextSpinnerItem">
+        <attr name="UIIconTextSpinnerItem_isRequired" format="boolean" />
+        <attr name="UIIconTextSpinnerItem_isTop" format="boolean" />
+        <attr name="UIIconTextSpinnerItem_isBottom" format="boolean" />
+        <attr name="UIIconTextSpinnerItem_isLayout" format="boolean" />
+        <attr name="UIIconTextSpinnerItem_hasNext" format="boolean" />
+        <attr name="UIIconTextSpinnerItem_showSpinner" format="boolean" />
+        <attr name="UIIconTextSpinnerItem_icon" format="dimension" />
+        <attr name="UIIconTextSpinnerItem_title" format="string" />
+        <attr name="UIIconTextSpinnerItem_array" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="UIIconTextRadioGroupItem">
+        <attr name="UIIconTextRadioGroupItem_isRequired" format="boolean" />
+        <attr name="UIIconTextRadioGroupItem_isTop" format="boolean" />
+        <attr name="UIIconTextRadioGroupItem_isBottom" format="boolean" />
+        <attr name="UIIconTextRadioGroupItem_isLayout" format="boolean" />
+        <attr name="UIIconTextRadioGroupItem_hasNext" format="boolean" />
+        <attr name="UIIconTextSpinnerItem_showGroup" format="boolean" />
+        <attr name="UIIconTextRadioGroupItem_icon" format="dimension" />
+        <attr name="UIIconTextRadioGroupItem_title" format="string" />
+        <attr name="UIIconTextRadioGroupItem_entries" format="dimension" />
+        <attr name="UIIconTextRadioGroupItem_checkIndex" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="STWheelView">
+        <attr name="STWheelView_gravity">
+            <enum name="center" value="17" />
+            <enum name="left" value="3" />
+            <enum name="right" value="5" />
+        </attr>
+        <attr name="STWheelView_textSize" format="dimension" />
+        <attr name="STWheelView_textColorOut" format="color" />
+        <attr name="STWheelView_textColorCenter" format="color" />
+        <attr name="STWheelView_dividerColor" format="color" />
+        <attr name="STWheelView_showUnit" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="STActionView">
+        <attr name="STActionView_showShader" format="boolean" />
+        <attr name="STActionView_text" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="STTextView">
+        <attr name="textSize" format="dimension" />
+        <attr name="textColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="PagerSlidingTabStrip">
+        <attr name="pstsIndicatorColor" format="color" />
+        <attr name="pstsUnderlineColor" format="color" />
+        <attr name="pstsDividerColor" format="color" />
+        <attr name="pstsIndicatorHeight" format="dimension" />
+        <attr name="pstsUnderlineHeight" format="dimension" />
+        <attr name="pstsDividerPadding" format="dimension" />
+        <attr name="pstsTabPaddingLeftRight" format="dimension" />
+        <attr name="pstsScrollOffset" format="dimension" />
+        <attr name="pstsTabBackground" format="reference" />
+        <attr name="pstsShouldExpand" format="boolean" />
+        <attr name="pstsTextAllCaps" format="boolean" />
+        <attr name="pstsTabTextSize" format="dimension" />
+    </declare-styleable>
+
+    <!-- For new UI -->
+    <declare-styleable name="STEditText2">
+        <attr name="STEditText2_textSize" format="dimension" />
+        <attr name="STEditText2_textColor" format="color" />
+        <attr name="STEditText2_background" format="color" />
+        <attr name="STEditText2_copydisabled" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="STSwitchView">
+        <attr name="hasShadow" format="boolean"/>
+        <attr name="primaryColor" format="color"/>
+        <attr name="primaryColorDark" format="color"/>
+        <attr name="offColor" format="color"/>
+        <attr name="offColorDark" format="color"/>
+        <attr name="barColor" format="color"/>
+        <attr name="bgColor" format="color"/>
+        <attr name="shadowColor" format="color"/>
+        <attr name="ratioAspect" format="float"/>
+        <attr name="isOpened" format="boolean"/>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <com.ssmalllucky.android.ui.view.STPrimaryTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/spacing_m"
+        android:text="UIKit组件库"
+        app:textSize="24sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/spacing_m" />
+
+    <com.ssmalllucky.android.ui.widget.STCardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.ssmalllucky.android.ui.view.STActionView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/spacing_m"
+        android:gravity="center"
+        android:onClick="onViewTestClick"
+        android:visibility="gone"
+        app:STActionView_text="测试按钮" />
+
+    <com.ssmalllucky.android.ui.view.STActionView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/spacing_m"
+        android:gravity="center"
+        android:onClick="onUITestClick"
+        android:visibility="gone"
+        app:STActionView_text="功能组件测试" />
+
+    <com.ssmalllucky.android.ui.view.STActionView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/spacing_m"
+        android:gravity="center"
+        android:onClick="onLoadLargeItemClick"
+        android:visibility="gone"
+        app:STActionView_text="动态加载大量Item测试" />
+
+    <com.ssmalllucky.android.ui.view.STActionView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/spacing_m"
+        android:gravity="center"
+        android:onClick="onLargeObjectToMapClick"
+        android:visibility="gone"
+        app:STActionView_text="大量对象转Map耗时测试" />
+
+</LinearLayout>

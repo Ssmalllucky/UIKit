@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <padding
+                android:bottom="1dp"
+                android:left="1dp"
+                android:right="1dp"
+                android:top="1dp" />
+            <solid android:color="#0D0076F6" />
+            <corners android:radius="@dimen/action_view_radius_l" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <padding
+                android:bottom="1dp"
+                android:left="1dp"
+                android:right="1dp"
+                android:top="1dp" />
+            <solid android:color="#100076F6" />
+            <corners android:radius="@dimen/action_view_radius_l" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <padding
+                android:bottom="1dp"
+                android:left="1dp"
+                android:right="1dp"
+                android:top="1dp" />
+            <solid android:color="#150076F6" />
+            <corners android:radius="@dimen/action_view_radius_l" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <padding
+                android:bottom="1dp"
+                android:left="1dp"
+                android:right="1dp"
+                android:top="1dp" />
+            <solid android:color="#200076F6" />
+            <corners android:radius="@dimen/action_view_radius_l" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <padding
+                android:bottom="1dp"
+                android:left="1dp"
+                android:right="1dp"
+                android:top="1dp" />
+            <solid android:color="#250076F6" />
+            <corners android:radius="@dimen/action_view_radius_l" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <solid android:color="@color/activeColor" />
+            <corners android:radius="@dimen/action_view_radius_l" />
+        </shape>
+    </item>
+</layer-list>

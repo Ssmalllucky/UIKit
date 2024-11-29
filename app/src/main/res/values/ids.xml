@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 使用tag传递数据。 -->
+    <item name="required" type="id" />
+    <item name="tag_index" type="id" />
+    <item name="tag_title" type="id" />
+    <item name="tag_txt_more_report" type="id" />
+</resources>

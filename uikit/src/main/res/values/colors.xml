@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorSecondary">#FF9E48</color>
+
+    <!-- Default base colors -->
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!-- App base colors  -->
+    <color name="white">#FFFFFF</color>
+    <color name="white_pressed">#C3C3C3</color>
+    <color name="black">#000</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="bg_color">#F3F3F3</color>
+<!--    <color name="page_background">#F1F0F5</color> &lt;!&ndash; 内容区背景色 &ndash;&gt;-->
+    <color name="page_background">#F3F4F6</color> <!-- 内容区背景色 鸿蒙OS设置界面背景色 -->
+<!--    <color name="page_background">#F6F6F6</color> &lt;!&ndash; 内容区背景色 小米HyperOS设置界面背景色 &ndash;&gt;-->
+<!--    <color name="page_background">#F2F3F7</color> &lt;!&ndash; 内容区背景色 荣耀 MagicOS设置界面背景色&ndash;&gt;-->
+
+    <color name="theme_color_primary1">#5EA4FF</color>
+    <color name="theme_color_primary2">#FF9E48</color>
+    <color name="theme_color_primary4">#43D08E</color>
+
+    <color name="theme_color_primary1_pressed">#034D9C</color>
+    <color name="theme_color_primary2_pressed">#C36445</color>
+
+    <color name="_xpopup_list_divider">#EEEEEE</color>
+    <color name="_xpopup_title_color">#444444</color>
+    <color name="_xpopup_content_color">#333333</color>
+    <color name="_xpopup_white_color">#f1f1f1</color>
+    <color name="_xpopup_dark_color">#232323</color>
+    <color name="_xpopup_light_color">#FFFFFF</color>
+    <color name="_xpopup_list_dark_divider">#444444</color>
+
+    <color name="pickerview_timebtn_nor">#057dff</color>
+    <color name="pickerview_timebtn_pre">#c2daf5</color>
+    <color name="pickerview_bg_topbar">#f5f5f5</color>
+    <color name="pickerview_topbar_title">#000000</color>
+    <color name="pickerview_wheelview_textcolor_out">#a8a8a8</color>
+    <color name="pickerview_wheelview_textcolor_center">#2a2a2a</color>
+    <color name="pickerview_wheelview_textcolor_divider">#d5d5d5</color>
+
+    <color name="theme_color_primary">#303F9F</color>
+    <color name="theme_color_primary_pressed">#2C2F63</color>
+    <!--覆盖颜色-->
+    <color name="bgColor_overlay">#60000000</color>
+
+    <!-- Toast color -->
+    <color name="defaultTextColor">#FFFFFF</color>
+    <color name="errorColor_p10">#1AFF4211</color>
+    <color name="errorColor_p20">#33FF4211</color>
+    <color name="errorColor_p50">#80FF4211</color>
+    <color name="errorColor">#FF4211</color>
+    <color name="infoColor">#3F51B5</color>
+    <color name="successColor">#1FC48C</color>
+    <color name="successColor_p10">#1A1FC48C</color>
+    <color name="successColor_p20">#331FC48C</color>
+    <color name="successColor_p50">#801FC48C</color>
+    <color name="warningColor">#FFA900</color>
+    <color name="normalColor">#353A3E</color>
+    <color name="camera_black">#010101</color>
+    <color name="camera_black_overlay">#80010101</color>
+    <color name="successColorPressed">#2E5C2E</color>
+    <color name="warningColor_p10">#1AFFA900</color>
+    <color name="warningColor_p30">#33FFA900</color>
+
+    <color name="title_color">#85858A</color>
+    <color name="text_color_primary">#001226</color> <!-- 用于重要文字信息、标题文字信息等 -->
+    <color name="text_color_secondary_title">#001226</color> <!-- 次要文字信息、icon色等 -->
+    <color name="text_color_secondary_content">#66717D</color> <!-- 次要文字信息、icon色等 -->
+    <color name="text_color_tertiary">#85858A</color> <!-- 提示文字信息、不可点按钮等 -->
+    <color name="line_color">#EEEEEE</color> <!-- 输入区分割线色彩 -->
+    <color name="content_color">#444</color>
+    <color name="white_layout_pressed_color">#EEEEEE</color>
+
+    <color name="activeColorBackground">#1A0076F6</color>
+    <color name="activeColorBackgroundPressed">#330076F6</color>
+    <color name="trackActiveColor">#803676FF</color>
+    <color name="activeColor">#0076F6</color>
+    <color name="activeColorPressed">#0064C4</color>
+
+    <color name="CE4E4E4">#E4E4E4</color>
+    <color name="CE6EBFF">#E6EBFF</color>
+    <color name="C9CA2CD">#9CA2CD</color>
+    <color name="C3365CD">#3365CD</color>
+    <color name="C283163">#283163</color>
+    <color name="C1B7A2B">#1B7A2B</color>
+    <color name="C5B8FF9">#5B8FF9</color>
+    <color name="C5570C7">#5570C7</color>
+    <color name="CEAEAEA">#EAEAEA</color>
+    <color name="CA9A9A9">#A9A9A9</color>
+    <color name="CEBEBEB">#EBEBEB</color>
+    <color name="CF0F0F0">#F0F0F0</color>
+    <color name="C444444">#444444</color>
+    <color name="CF26A50">#F26A50</color>
+    <color name="CB6543D">#B6543D</color>
+    <color name="C359460">#359460</color>
+    <color name="C2A4F74">#2A4F74</color>
+    <color name="C535358">#535358</color>
+    <color name="text_hint_color">#939393</color>
+
+    <color name="white_percent_50">#80FFFFFF</color>
+    <color name="black_percent_50">#50000000</color>
+
+    <color name="spinner_background_stroke">#DDDDDD</color>
+    <color name="spinner_dropdown_background">#666666</color>
+    <color name="filter_item_background">#F8F8F8</color>
+    <color name="CF7F7F7">#F7F7F7</color>
+    <color name="traffic_color">#3966A7</color>
+    <color name="disabledColor">#E9E9EB</color>
+    <color name="tab_strip_divider_color">#D3D3D3</color>
+    <color name="CD3D2D7">#D3D2D7</color>
+
+    <color name="edittext_item_background">#DFDFDF</color>
+    <color name="disabledColorNormal">#CBCBCD</color>
+</resources>

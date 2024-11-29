@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_background">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/layout_base_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/title">
+
+        <com.ssmalllucky.android.ui.widget.STSlidingTab
+            android:id="@+id/stSlidingTab"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="@dimen/page_layout_margin"
+            android:background="@drawable/shape_tabstrip_background"
+            app:pstsIndicatorColor="@color/black"
+            app:pstsIndicatorHeight="1dp"
+            app:pstsShouldExpand="true" />
+
+        <com.ssmalllucky.android.ui.view.STViewPager
+            android:id="@+id/stViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        app:layout_constraintVertical_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/spacing_m"
+            android:paddingTop="8dp"
+            android:paddingEnd="@dimen/spacing_m"
+            android:paddingBottom="@dimen/spacing_m">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.ssmalllucky.android.ui.view.STTextInputEditText
+                    android:id="@+id/textInputItem"
+                    android:layout_width="match_parent"
+                    android:completionThreshold="1"
+                    android:layout_height="@dimen/action_height" />
+
+                <com.ssmalllucky.android.ui.widget.STItem
+                    android:id="@+id/zplxItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="@dimen/st_item_height"
+                    app:STItem_hasNext="false"
+                    app:STItem_isLayout="true"
+                    app:STItem_title="照片类型选择弹窗"
+                    app:STItem_titleWrap="true" />
+
+                <com.ssmalllucky.android.ui.widget.STItem
+                    android:id="@+id/qrCodeItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="@dimen/st_item_height"
+                    app:STItem_hasNext="false"
+                    app:STItem_isLayout="true"
+                    app:STItem_title="展示二维码弹窗"
+                    app:STItem_titleWrap="true" />
+
+                <com.ssmalllucky.android.ui.widget.STSpinnerItem
+                    android:id="@+id/pdpxItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/st_item_height"
+                    android:layout_marginTop="@dimen/spacing_m"
+                    app:STItem_hasNext="false"
+                    app:STItem_isLayout="true"
+                    app:STItem_title="判定排序"
+                    app:STSpinnerItem_entries="@array/settings_judge_sort" />
+
+                <com.ssmalllucky.android.ui.widget.STItem
+                    android:id="@+id/diyViewTest"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="@dimen/st_item_height"
+                    app:STItem_hasNext="false"
+                    app:STItem_isLayout="true"
+                    app:STItem_title="自定义View测试"
+                    app:STItem_titleWrap="true" />
+
+                <com.ssmalllucky.android.ui.widget.STItem
+                    android:id="@+id/dialogItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="@dimen/st_item_height"
+                    app:STItem_hasNext="false"
+                    app:STItem_isLayout="true"
+                    app:STItem_title="Action3弹窗" />
+
+                <com.ssmalllucky.android.ui.widget.STItem
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="@dimen/st_item_height"
+                    android:onClick="warnDialogClick"
+                    app:STItem_hasNext="false"
+                    app:STItem_isLayout="true"
+                    app:STItem_titleWrap="true"
+                    app:STItem_title="带警示信息的弹窗" />
+
+                <com.ssmalllucky.android.ui.widget.STItem
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="@dimen/st_item_height"
+                    android:onClick="simpleDialog"
+                    app:STItem_hasNext="false"
+                    app:STItem_isLayout="true"
+                    app:STItem_title="简单弹窗" />
+
+                <com.ssmalllucky.android.ui.widget.STPickerItem
+                    android:id="@+id/pickerItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="@dimen/st_item_height"
+                    app:STItem_hasNext="false"
+                    app:STItem_isLayout="true"
+                    app:STPickerItem_type="date"
+                    app:STItem_title="时间选择器测试"
+                    app:STItem_titleWrap="true" />
+
+                <com.ssmalllucky.android.ui.widget.STPickerItem
+                    android:id="@+id/csysChooseItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="@dimen/st_item_height"
+                    app:STContentItem_hint="请选择"
+                    app:STItem_hasNext="false"
+                    app:STItem_isLayout="true"
+                    app:STPickerItem_type="csys"
+                    app:STItem_title="车身颜色选择器测试"
+                    app:STItem_titleWrap="true" />
+
+                <com.ssmalllucky.android.ui.widget.STSwitchItem
+                    android:id="@+id/switchItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="@dimen/st_item_height"
+                    app:STContentItem_hint="请选择"
+                    app:STItem_hasNext="false"
+                    app:STItem_isLayout="true"
+                    app:STSwitchItem_entries="@array/entries_yes_or_no"
+                    app:STItem_title="开关组件测试"
+                    app:STItem_titleWrap="true" />
+
+                <com.ssmalllucky.android.ui.widget.STItem
+                    android:id="@+id/loadingItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_m"
+                    android:minHeight="@dimen/st_item_height"
+                    app:STItem_hasNext="false"
+                    app:STItem_isLayout="true"
+                    app:STItem_title="显示加载框" />
+
+                <com.ssmalllucky.android.ui.widget.STEditTextItem
+                    android:id="@+id/iptestItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/st_item_height"
+                    android:minHeight="@dimen/st_item_height"
+                    app:STItem_hasNext="false"
+                    app:STItem_isLayout="true"
+                    app:STItem_title="IP键盘测试" />
+
+                <com.ssmalllucky.android.ui.widget.STItem
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/st_item_height"
+                    android:minHeight="@dimen/st_item_height"
+                    android:visibility="gone"
+                    app:STItem_hasNext="false"
+                    app:STItem_isLayout="true"
+                    app:STItem_layoutPosition="bottom"
+                    app:STItem_title="底部项" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:digits="0123456789."
+                    android:inputType="numberPassword" />
+
+                <com.ssmalllucky.android.ui.widget.STContentItem
+                    android:id="@+id/dmtbItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/st_item_height"
+                    android:layout_marginTop="@dimen/spacing_m"
+                    app:STContentItem_contentBackground="@drawable/shape_highlight_text"
+                    app:STContentItem_contentColor="@color/activeColor"
+                    app:STContentItem_contentText="点击同步"
+                    app:STItem_hasNext="false"
+                    app:STItem_isLayout="true"
+                    app:STItem_title="代码同步" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/titleTV"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:text="已完成更新"
+        android:textColor="@color/text_color_primary"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.ssmalllucky.android.ui.view.STPrimaryTextView
+        android:id="@+id/dialogVersionTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:text="V3.2.0.2410311555"
+        android:textColor="@color/text_color_primary"
+        android:textSize="@dimen/text_size_primary"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/spacing_l"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleTV" />
+
+    <ScrollView
+        android:id="@+id/contentScrollView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_10"
+        app:layout_constrainedHeight="true"
+        android:layout_marginTop="@dimen/spacing_m"
+        app:layout_constraintHeight_max="300dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toStartOf="@id/titleTV"
+        app:layout_constraintTop_toBottomOf="@id/dialogVersionTV">
+
+        <com.ssmalllucky.android.ui.view.STSecondaryTextView
+            android:id="@+id/contentTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="4dp"
+            android:textColor="@color/content_color"
+            android:textSize="@dimen/dialog_content_text_size" />
+    </ScrollView>
+
+    <com.ssmalllucky.android.ui.view.STPrimaryTextView
+        android:id="@+id/okTV"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="@dimen/dp_20"
+        android:background="@drawable/selector_dialog_ok"
+        android:gravity="center"
+        android:text="我知道了"
+        android:textStyle="bold"
+        app:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/contentScrollView" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

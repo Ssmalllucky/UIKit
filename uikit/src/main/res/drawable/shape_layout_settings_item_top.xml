@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <shape>
+            <solid android:color="@color/white" />  <!-- 底色 -->
+            <corners
+                android:topLeftRadius="@dimen/dp_settings_item_radius"
+                android:topRightRadius="@dimen/dp_settings_item_radius" />
+        </shape>
+    </item>
+
+    <item android:left="@dimen/dp_settings_item_padding_left">
+        <shape>
+            <solid android:color="@color/CE4E4E4" /> <!-- 边框颜色 -->
+            <corners
+                android:topLeftRadius="@dimen/dp_settings_item_radius"
+                android:topRightRadius="@dimen/dp_settings_item_radius" />
+        </shape>
+    </item>
+
+    <item android:bottom="1dp">
+        <shape>
+            <solid android:color="@color/white" />  <!-- 主体背景颜色 -->
+            <corners
+                android:topLeftRadius="@dimen/dp_settings_item_radius"
+                android:topRightRadius="@dimen/dp_settings_item_radius" />
+        </shape>
+    </item>
+
+</layer-list>

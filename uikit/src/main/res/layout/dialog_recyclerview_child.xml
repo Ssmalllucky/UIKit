@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/titleTV"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:text="标题"
+        android:textColor="@color/text_color_primary"
+        android:textSize="@dimen/dialog_title_text_size"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/addGroupIV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_function_add"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/titleTV"
+        app:layout_constraintBottom_toBottomOf="@id/titleTV"
+        />
+
+    <FrameLayout
+        android:id="@+id/recyclerViewContainer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:gravity="center"
+        android:lineSpacingExtra="4dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:text="内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toStartOf="@id/titleTV"
+        app:layout_constraintTop_toBottomOf="@id/titleTV" />
+
+
+    <com.ssmalllucky.android.ui.view.STPrimaryTextView
+        android:id="@+id/cancelTV"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/selector_dialog_cancel"
+        android:gravity="center"
+        android:text="取消"
+        android:textStyle="bold"
+        app:textColor="@color/text_color_primary"
+        app:layout_constraintEnd_toStartOf="@+id/okTV"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/recyclerViewContainer" />
+
+    <com.ssmalllucky.android.ui.view.STPrimaryTextView
+        android:id="@+id/okTV"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="@dimen/dp_20"
+        android:background="@drawable/selector_dialog_ok"
+        android:gravity="center"
+        android:text="确认"
+        android:textStyle="bold"
+        app:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toEndOf="@+id/cancelTV"
+        app:layout_constraintTop_toBottomOf="@id/recyclerViewContainer" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
