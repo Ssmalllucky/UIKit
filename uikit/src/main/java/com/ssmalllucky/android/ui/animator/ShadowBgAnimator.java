@@ -20,7 +20,6 @@ public class ShadowBgAnimator extends PopupAnimator {
         super(target, animationDuration);
         this.shadowColor = shadowColor;
     }
-    public ShadowBgAnimator() {}
     @Override
     public void initAnimator() {
         targetView.setBackgroundColor(startColor);

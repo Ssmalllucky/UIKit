@@ -23,7 +23,6 @@ public class BlurAnimator extends PopupAnimator {
     public Bitmap decorBitmap;
     public boolean hasShadowBg = false;
 
-    public BlurAnimator() {}
     @Override
     public void initAnimator() {
         Bitmap blurBmp = XPopupUtils.renderScriptBlur(targetView.getContext(), decorBitmap,  10, true);

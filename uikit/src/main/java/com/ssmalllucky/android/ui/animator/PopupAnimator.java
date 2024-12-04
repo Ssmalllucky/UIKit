@@ -18,7 +18,6 @@ public abstract class PopupAnimator {
     public View targetView;
     public int animationDuration = 0;
     public PopupAnimation popupAnimation; // 内置的动画
-    public PopupAnimator(){}
     public PopupAnimator(View target, int animationDuration){
         this(target, animationDuration, null);
     }

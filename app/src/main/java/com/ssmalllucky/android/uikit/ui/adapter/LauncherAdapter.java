@@ -80,7 +80,7 @@ public class LauncherAdapter extends RecyclerView.Adapter<LauncherAdapter.VH> {
         if (!TextUtils.isEmpty(item.getColorString())) {
             holder.cardView.setParseColor(Color.parseColor(item.getColorString()));
         } else {
-            holder.cardView.setColor(com.ssmalllucky.android.ui.R.color.theme_color_primary);
+            holder.cardView.setColor(R.color.theme_color_primary);
         }
         holder.cardView.setTitle(item.getTitle());
 

@@ -9,6 +9,7 @@ import android.graphics.drawable.Drawable;
 import android.graphics.drawable.StateListDrawable;
 import android.text.TextUtils;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.util.TypedValue;
 import android.view.Gravity;
 import android.view.View;
@@ -33,6 +34,8 @@ import com.ssmalllucky.android.ui.view.STSecondaryTextView;
  * @Description 卡片视图，主要用于图标和文本的上下组合。
  */
 public class STCardView extends CardView {
+
+    public static final String TAG = "STCardView";
 
     private Context mContext;
 
@@ -215,8 +218,15 @@ public class STCardView extends CardView {
     }
 
     public void setIcon(int resId) {
-        icon = ContextCompat.getDrawable(mContext, resId);
-        addIconImageView();
+        if(resId == 0){
+            return;
+        }
+        try{
+            icon = ContextCompat.getDrawable(mContext, resId);
+            addIconImageView();
+        }catch (Exception e){
+            Log.d(TAG, "setIcon: " + e.getCause());
+        }
     }
 
     public void setColor(int colorResId) {

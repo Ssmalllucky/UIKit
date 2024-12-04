@@ -32,7 +32,7 @@ import java.lang.reflect.Field;
  *
  * @author shuaijialin
  */
-public class STEditText2 extends EditText {
+public class STEditText2 extends androidx.appcompat.widget.AppCompatEditText {
 
     private float textSize;
     private boolean copyDisabled = true;
