@@ -7,7 +7,6 @@ import android.view.View;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.ssmalllucky.android.ui.utils.DisplayUtils;
 import com.ssmalllucky.android.uikit.databinding.ActivityViewTestBinding;
 
 /**
@@ -38,6 +37,12 @@ public class ViewTestUI extends AppCompatActivity {
                 Log.d(TAG, "onClick: ");
             }
         });
+
+        binding.actionItem2.setEnabled(true);
+        binding.actionItem2.setOnClickListener(v -> Log.d(TAG, "onClick: "));
+
+        binding.actionItem3.setEnabled(false);
+        binding.actionItem3.setOnClickListener(v -> Log.d(TAG, "onClick111: "));
 
 //        binding.dynamicTVWithWidth.adjustTextSize(DisplayUtils.dip2px(this,10),12);
     }

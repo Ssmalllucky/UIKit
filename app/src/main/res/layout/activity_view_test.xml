@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/page_background"
     android:orientation="vertical">
 
     <com.ssmalllucky.android.ui.view.STPrimaryTextView
@@ -59,4 +60,20 @@
             app:layout_constraintVertical_bias="0.0"
             app:textColor="@color/white" />
     </com.ssmalllucky.android.ui.view.STLinearLayout>
+
+    <com.ssmalllucky.android.ui.view.STActionView2
+        android:id="@+id/actionItem2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="@dimen/spacing_m"
+        android:gravity="center"
+        app:STActionView2_text="提交" />
+
+    <com.ssmalllucky.android.ui.view.STAssistView2
+        android:id="@+id/actionItem3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="@dimen/spacing_m"
+        android:gravity="center"
+        app:STAssistView2_text="提交" />
 </LinearLayout>

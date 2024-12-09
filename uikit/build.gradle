@@ -3,13 +3,14 @@ plugins {
 }
 
 //版本号（改动条件：完全重构 或 重要功能的改动）
-def versionValue = "2"
+def versionValue = "1"
 
 //发布号（改动条件：功能的改动 或 错误的修复）
 def releaseValue = "0"
 
 //固定号（改动条件：此AAR的任意调整）
-def fixValue = releaseTime()
+//def fixValue = releaseTime()
+def fixValue = "3"
 
 android {
     namespace 'com.ssmalllucky.android.ui'
@@ -56,7 +57,7 @@ android {
 }
 
 static def releaseTime() {
-    return new Date().format("yyMMddHHmm", TimeZone.getTimeZone("GMT+8"))
+    return new Date().format("yyMMdd", TimeZone.getTimeZone("GMT+8"))
 }
 
 dependencies {

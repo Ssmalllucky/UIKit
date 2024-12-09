@@ -86,6 +86,22 @@
         <attr name="STAssistView_textColor" format="color" />
     </declare-styleable>
 
+    <declare-styleable name="STActionView2">
+        <attr name="STActionView2_showShader" format="boolean" />
+        <attr name="STActionView2_text" format="string" />
+        <attr name="STActionView2_textSize" format="dimension" />
+        <attr name="STActionView2_enabled" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="STAssistView2">
+        <attr name="STAssistView2_showShader" format="boolean" />
+        <attr name="STAssistView2_text" format="string" />
+        <attr name="STAssistView2_background" format="reference" />
+        <attr name="STAssistView2_textColor" format="color" />
+        <attr name="STAssistView2_textSize" format="dimension" />
+        <attr name="STAssistView2_enabled" format="boolean" />
+    </declare-styleable>
+
     <declare-styleable name="STEditTextItem2">
         <attr name="STEditTextItem2_hint" format="string" />
         <attr name="STEditTextItem2_content" format="string" />

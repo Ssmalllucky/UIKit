@@ -1,46 +1,14 @@
 package com.ssmalllucky.android.ui;
 
-import android.content.Context;
 import android.graphics.Color;
 import android.graphics.PointF;
-import android.os.Build;
-import android.view.Gravity;
 import android.view.MotionEvent;
 import android.view.View;
-import android.widget.ImageView;
-
-import androidx.annotation.RequiresApi;
-import androidx.lifecycle.Lifecycle;
-
-import com.ssmalllucky.android.ui.animator.PopupAnimator;
-import com.ssmalllucky.android.ui.core.BasePopupView;
-import com.ssmalllucky.android.ui.core.ImageViewerPopupView;
-import com.ssmalllucky.android.ui.core.PopupInfo;
-import com.ssmalllucky.android.ui.enums.PopupAnimation;
-import com.ssmalllucky.android.ui.enums.PopupPosition;
-import com.ssmalllucky.android.ui.impl.AttachListPopupView;
-import com.ssmalllucky.android.ui.impl.BottomListPopupView;
-import com.ssmalllucky.android.ui.impl.CenterListPopupView;
-import com.ssmalllucky.android.ui.impl.ConfirmPopupView;
-import com.ssmalllucky.android.ui.impl.InputConfirmPopupView;
-import com.ssmalllucky.android.ui.impl.LoadingPopupView;
-import com.ssmalllucky.android.ui.interfaces.OnCancelListener;
-import com.ssmalllucky.android.ui.interfaces.OnConfirmListener;
-import com.ssmalllucky.android.ui.interfaces.OnImageViewerLongPressListener;
-import com.ssmalllucky.android.ui.interfaces.OnInputConfirmListener;
-import com.ssmalllucky.android.ui.interfaces.OnSelectListener;
-import com.ssmalllucky.android.ui.interfaces.OnSrcViewUpdateListener;
-import com.ssmalllucky.android.ui.interfaces.XPopupCallback;
-import com.ssmalllucky.android.ui.interfaces.XPopupImageLoader;
-import com.ssmalllucky.android.ui.utils.XPermission;
-import com.ssmalllucky.android.ui.utils.XPopupUtils;
-
-import java.util.ArrayList;
-import java.util.List;
 
 
 public class XPopup {
-    private XPopup() { }
+    private XPopup() {
+    }
 
     /**
      * 全局弹窗的设置
@@ -55,11 +23,13 @@ public class XPopup {
 
     /**
      * 设置全局的背景阴影颜色
+     *
      * @param color
      */
     public static void setShadowBgColor(int color) {
         shadowBgColor = color;
     }
+
     public static int getShadowBgColor() {
         return shadowBgColor;
     }
@@ -105,6 +75,7 @@ public class XPopup {
 
     /**
      * 统一设置是否是亮色状态栏
+     *
      * @param isLight
      */
     public static void setIsLightStatusBar(boolean isLight) {
@@ -113,6 +84,7 @@ public class XPopup {
 
     /**
      * 统一设置是否是亮色导航栏
+     *
      * @param isLight
      */
     public static void setIsLightNavigationBar(boolean isLight) {
@@ -121,6 +93,7 @@ public class XPopup {
 
     /**
      * 设置全局动画时长
+     *
      * @param duration
      */
     public static void setAnimationDuration(int duration) {
@@ -135,21 +108,23 @@ public class XPopup {
 
     /**
      * 在长按弹出弹窗后，能保证下层View不能滑动
+     *
      * @param v
      */
     public static PointF longClickPoint = null;
-    public static void fixLongClick(View v){
+
+    public static void fixLongClick(View v) {
         v.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
-                if(event.getAction()==MotionEvent.ACTION_DOWN){
+                if (event.getAction() == MotionEvent.ACTION_DOWN) {
                     longClickPoint = new PointF(event.getRawX(), event.getRawY());
                 }
-                if("xpopup".equals(v.getTag()) && event.getAction()==MotionEvent.ACTION_MOVE){
+                if ("xpopup".equals(v.getTag()) && event.getAction() == MotionEvent.ACTION_MOVE) {
                     //长按发送，阻断父View拦截
                     v.getParent().requestDisallowInterceptTouchEvent(true);
                 }
-                if(event.getAction()==MotionEvent.ACTION_UP){
+                if (event.getAction() == MotionEvent.ACTION_UP) {
                     //长按结束，恢复阻断
                     v.getParent().requestDisallowInterceptTouchEvent(false);
                     v.setTag(null);
