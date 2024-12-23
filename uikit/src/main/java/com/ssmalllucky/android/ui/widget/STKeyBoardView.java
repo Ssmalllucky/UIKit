@@ -30,14 +30,14 @@ public class STKeyBoardView extends KeyboardView {
     public STKeyBoardView(Context context, AttributeSet attrs) {
         super(context, attrs);
         this.mContext = context;
-        this.mTextSize = context.getResources().getDimensionPixelSize(R.dimen.text_size_primary);
+        this.mTextSize = context.getResources().getDimensionPixelSize(R.dimen.text_size_keyboardview);
         this.itemPadding = DisplayUtils.dip2px(context, 4f);
     }
 
     public STKeyBoardView(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
         this.mContext = context;
-        this.mTextSize = context.getResources().getDimensionPixelSize(R.dimen.text_size_primary);
+        this.mTextSize = context.getResources().getDimensionPixelSize(R.dimen.text_size_keyboardview);
         this.itemPadding = DisplayUtils.dip2px(context, 4f);
     }
 

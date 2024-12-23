@@ -60,7 +60,7 @@ public class BaseKeyboard {
         this.layoutResId = layoutResId;
         this.mIfRandom = mIfRandom;
         Keyboard = new Keyboard(mActivity, layoutResId);
-        mKeyboardView = (STKeyBoardView) mActivity.findViewById(R.id.keyboard_view);
+        mKeyboardView = mActivity.findViewById(R.id.keyboard_view);
     }
 
     /**
@@ -84,7 +84,7 @@ public class BaseKeyboard {
         if (Keyboard == null) {
             Keyboard = new Keyboard(mActivity, layoutResId);
         }
-        ViewGroup decorView = (ViewGroup) mActivity.getWindow().getDecorView().findViewById(android.R.id.content);
+        ViewGroup decorView = mActivity.getWindow().getDecorView().findViewById(android.R.id.content);
         mKeyboardView = (STKeyBoardView) LayoutInflater.from(mActivity).inflate(R.layout.layout_keyboardview, (ViewGroup) decorView, false);
         FrameLayout.LayoutParams params = new FrameLayout.LayoutParams(
                 ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);

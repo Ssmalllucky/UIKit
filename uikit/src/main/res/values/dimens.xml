@@ -19,6 +19,8 @@
     <!-- 选项文字大小 需要配合 bools.xml 的 pickerview_customTextSize 为 true 才有效果-->
     <dimen name="pickerview_textsize">20sp</dimen>
 
+    <dimen name="text_size_keyboardview">22sp</dimen> <!-- 自定义键盘布局文件字体大小 -->
+
     <dimen name="text_size_primary">18sp</dimen> <!-- 导航标题、功能按钮 -->
     <dimen name="text_size_secondary_title">16sp</dimen> <!-- 二级标题、少文字正文内容 -->
     <dimen name="text_size_secondary_content">14sp</dimen> <!-- 多文字时、正文内容 -->
