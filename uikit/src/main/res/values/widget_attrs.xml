@@ -123,9 +123,9 @@
         <attr name="STCardView_title" format="string" />
         <attr name="STCardView_titleSize" format="dimension" />
         <attr name="STCardView_iconSize" format="dimension" />
-        <attr name="STCardView_titleColor" format="reference"/>
-        <attr name="STCardView_desc" format="string"/>
-        <attr name="STCardView_simpleBackground" format="boolean"/>
+        <attr name="STCardView_titleColor" format="reference" />
+        <attr name="STCardView_desc" format="string" />
+        <attr name="STCardView_simpleBackground" format="boolean" />
         <attr name="STCardView_enableStateList" format="boolean" />
     </declare-styleable>
 
@@ -150,14 +150,14 @@
     </declare-styleable>
 
     <declare-styleable name="STSwitchItem2">
-        <attr format="boolean" name="STSwitchItem2_isenable"/>
-        <attr format="enum" name="STSwitchItem2_status">
-            <enum name="off" value="1"/>
-            <enum name="on" value="2"/>
+        <attr name="STSwitchItem2_isenable" format="boolean" />
+        <attr name="STSwitchItem2_status" format="enum">
+            <enum name="off" value="1" />
+            <enum name="on" value="2" />
         </attr>
-        <attr format="dimension" name="STSwitchItem2_entries"/>
-        <attr format="color" name="STSwitchItem2_primaryColor"/>
-        <attr format="color" name="STSwitchItem2_primaryColorDark"/>
+        <attr name="STSwitchItem2_entries" format="dimension" />
+        <attr name="STSwitchItem2_primaryColor" format="color" />
+        <attr name="STSwitchItem2_primaryColorDark" format="color" />
     </declare-styleable>
 
     <declare-styleable name="STPickerItem">
@@ -180,4 +180,16 @@
         <attr name="STDrawableTextItem_textSize" format="dimension" />
         <attr name="STDrawableTextItem_text" format="string" />
     </declare-styleable>
+
+    <declare-styleable name="STExpandableTextView">
+        <attr name="maxCollapsedLines" format="integer" />
+        <attr name="animDuration" format="integer" />
+        <attr name="animAlphaStart" format="float" />
+        <attr name="contentColor" format="color" />
+        <attr name="expandColor" format="color" />
+    </declare-styleable>
+    <!-- From: file:/Users/manabu/Documents/private/git/ExpandableTextView/lib/src/main/res/values/ids.xml -->
+    <eat-comment />
+    <item name="expand_collapse" type="id" />
+    <item name="expandable_text" type="id" />
 </resources>

@@ -10,7 +10,7 @@ def releaseValue = "0"
 
 //固定号（改动条件：此AAR的任意调整）
 //def fixValue = releaseTime()
-def fixValue = "3"
+def fixValue = "4"
 
 android {
     namespace 'com.ssmalllucky.android.ui'
